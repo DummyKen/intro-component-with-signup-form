@@ -84,5 +84,24 @@ body{
 .form-group .colored{
   color: hsl(0, 100%, 74%);
 }
+
+/* error border*/
+
+
+/* error message(label) */
+.error{
+  display: none;
+  color: hsl(0, 100%, 74%);
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 500;
+  float: right;
+  margin-right: 0.3rem;
+}
+
+.invalid{
+  border-color: red;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
