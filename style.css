@@ -1,107 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
-body{
-  font-family: 'Poppins', sans-serif;
-  background-color: hsl(0, 100%, 74%);
-  background-image: url('images/bg-intro-desktop.png');
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: hsl(0, 100%, 74%);
+	background-image: url("images/bg-intro-desktop.png");
 }
-.card{
-  display: flex;
-  gap: 40px;
-  margin: 10vw;
-  font-size: 16px;
+.card {
+	display: flex;
+	gap: 40px;
+	margin: 10vw;
+	font-size: 16px;
 }
 
 /* text showcase area */
-.card .showcase{
-  color: white;
-  margin: 5rem auto;
-  padding: 25px;
-
+.card .showcase {
+	color: white;
+	margin: 5rem auto;
+	padding: 25px;
 }
-.card .showcase .header-text{
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 3rem;
+.card .showcase .header-text {
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 3rem;
 }
-.card .showcase .subtext{
-  margin: 1.5rem 0;
-  margin-right: 1rem;
+.card .showcase .subtext {
+	margin: 1.5rem 0;
+	margin-right: 1rem;
 }
 
 /* form area */
-.form-group .form-header{
-  background: hsl(248, 32%, 49%) ;
-  color: white;
-  border-radius: 5px;
-  width: 30vw;
-  margin: 15px;
-  padding: 0.7rem 1.5rem;
-  text-align: center;
+.form-group .form-header {
+	background: hsl(248, 32%, 49%);
+	color: white;
+	border-radius: 5px;
+	width: 30vw;
+	margin: 15px;
+	padding: 0.7rem 1.5rem;
+	text-align: center;
 }
-.form-group .form-header .boldtext{
-  font-weight: bold;
+.form-group .form-header .boldtext {
+	font-weight: bold;
 }
-.form-group form{
-  width: 30vw;
-  margin: 15px;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 10px;
+.form-group form {
+	width: 30vw;
+	margin: 15px;
+	padding: 1.5rem;
+	background: white;
+	border-radius: 10px;
 }
-.form-group form input, button{
-  padding: 15px;
-  width: 90%;
-  margin: 0.6rem auto;
-  border-radius: 5px;
-  border: 0.3px solid grey;
-  font-weight: 700;
+.form-group form input,
+button {
+	padding: 15px;
+	width: 90%;
+	margin: 0.6rem auto;
+	border-radius: 5px;
+	border: 0.3px solid grey;
+	font-weight: 700;
 }
-.form-group button{
-  background: hsl(154, 59%, 51%);
-  width: 100%;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  border: 0.3px solid hsl(154, 59%, 51%);
+.form-group button {
+	background: hsl(154, 59%, 51%);
+	width: 100%;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	border: 0.3px solid hsl(154, 59%, 51%);
 }
-.form-group button:hover{
-  cursor: pointer;
-  opacity: 70%;
+.form-group button:hover {
+	cursor: pointer;
+	opacity: 70%;
 }
-.form-group .small-text{
-  color:hsl(246, 25%, 77%);
-  width: 90%;
-  margin: 0.6rem auto;
-  font-size: 10px;
-  font-weight: bold;
+.form-group .small-text {
+	color: hsl(246, 25%, 77%);
+	width: 90%;
+	margin: 0.6rem auto;
+	font-size: 10px;
+	font-weight: bold;
 }
-.form-group .colored{
-  color: hsl(0, 100%, 74%);
+.form-group .colored {
+	color: hsl(0, 100%, 74%);
 }
 
 /* error border*/
 
-
 /* error message(label) */
-.error{
-  display: none;
-  color: hsl(0, 100%, 74%);
-  font-size: 10px;
-  font-style: italic;
-  font-weight: 500;
-  float: right;
-  margin-right: 0.3rem;
+.error {
+	display: none;
+	color: hsl(0, 100%, 74%);
+	font-size: 10px;
+	font-style: italic;
+	font-weight: 500;
+	float: right;
+	margin-right: 0.3rem;
 }
 
-.invalid{
-  border-color: red;
+.invalid {
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+/* mobile media queries */
+@media (max-width: 375px) {
+	.card {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+		margin: 3vw auto;
+	}
+	.card .showcase {
+		width: 90%;
+		margin: 3rem auto;
+		margin-bottom: 0rem;
+	}
+	.card .showcase .header-text {
+		font-size: 1.8rem;
+	}
+	.card .showcase .subtext {
+		font-size: 0.8rem;
+	}
+	.card .form-group .form-header {
+		width: 80%;
+		margin: 5%;
+		font-size: 1.3rem;
+	}
+	.card form {
+		width: 80%;
+	}
+}
